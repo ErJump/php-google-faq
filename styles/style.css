@@ -1,0 +1,57 @@
+*{
+    /* outline: 1px solid red; */
+}
+div.col-4 img{
+    height: 30px;
+}
+
+div.col-4 a{
+    font-size: 1.5rem;
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+}
+
+div.col-4 a:hover{
+    text-decoration: underline;
+    color: rgb(117, 117, 117);
+}
+
+.ms_avatar{
+    height: 50px;
+    cursor: pointer;
+}
+
+header{
+    border-bottom: 1px solid lightgray;
+}
+
+header ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 48px;
+}
+
+.ms_active{
+    border-bottom: 4px solid rgb(81, 81, 255);
+    color: rgb(81, 81, 255);
+}
+
+main h2{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+main p{
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+main a {
+    text-decoration: none;
+}

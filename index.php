@@ -51,7 +51,7 @@ $FAQList = [
         "answer" => [
             "<p>In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di <a href='privacy/key-terms#toc-terms-referrer-url'>URL referrer</a>. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili <a href='https://support.google.com/websearch/answer/173733'>qui</a>. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.</p>"
         ]
-    ]
+    ],
 ];
 ?>
 
@@ -63,21 +63,46 @@ $FAQList = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Google FAQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-
+    <header class="pt-3">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-4 d-flex align-items-center justify-content-start">
+                    <img class="me-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="logo">
+                    <a class="ms_logo_a" href="#">Privacy e termini</a>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                    <i class="fa-solid fa-bars fa-2x me-2"></i>
+                    <img class="ms_avatar" src="img/avatar.PNG" alt="avatar">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul >
+                        <li>Introduzione</li>
+                        <li>Norme sulla privacy</li>
+                        <li> Termini e servizio</li>
+                        <li>Tecnologie</li>
+                        <li class="ms_active">Domande frequenti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <?php
-            foreach ($FAQList as $key => $FAQ) {
-                echo $FAQ["question"];
-                foreach ($FAQ["answer"] as $answerKey => $answer) {
-                    echo $answer;
+        <div class="container p-5">
+            <?php
+                foreach ($FAQList as $key => $FAQ) {
+                    echo $FAQ["question"];
+                    foreach ($FAQ["answer"] as $answerKey => $answer) {
+                        echo $answer;
+                    }
                 }
-            }
-        ?>
+            ?>
+        </div>
     </main>
 </body>
 </html>
