@@ -23,6 +23,11 @@ div.col-4 a:hover{
 
 header{
     border-bottom: 1px solid lightgray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 header ul{
@@ -42,6 +47,10 @@ header ul li{
     color: rgb(81, 81, 255);
 }
 
+main{
+    margin-top: 150px;
+}
+
 main h2{
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -54,4 +63,17 @@ main p{
 
 main a {
     text-decoration: none;
+}
+
+main ol{
+    margin-bottom: 2rem;
+}
+
+main ol li {
+    margin-bottom: 1rem;
+}
+
+main ol ol {
+    margin-top: 1rem;
+    list-style-type: lower-alpha;
 }
