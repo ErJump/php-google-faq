@@ -72,7 +72,7 @@ $FAQList = [
             <div class="row justify-content-between align-items-center">
                 <div class="col-4 d-flex align-items-center justify-content-start">
                     <img class="me-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="logo">
-                    <a class="ms_logo_a" href="#">Privacy e termini</a>
+                    <a href="#">Privacy e termini</a>
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-end">
                     <i class="fa-solid fa-bars fa-2x me-2"></i>
@@ -104,5 +104,26 @@ $FAQList = [
             ?>
         </div>
     </main>
+    <footer>
+        <div class="container px-5 py-2">
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Google</li>
+                        <li>Tutto su Google</li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <i class="fa-solid fa-earth-americas me-2"></i>
+                    <select name="language" id="language">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

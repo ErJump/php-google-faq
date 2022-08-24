@@ -1,6 +1,3 @@
-*{
-    /* outline: 1px solid red; */
-}
 div.col-4 img{
     height: 30px;
 }
@@ -40,6 +37,7 @@ header ul li{
     display: inline-block;
     margin: 0 10px;
     line-height: 48px;
+    cursor: pointer;
 }
 
 .ms_active{
@@ -71,9 +69,30 @@ main ol{
 
 main ol li {
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 main ol ol {
     margin-top: 1rem;
     list-style-type: lower-alpha;
+}
+
+footer{
+    background-color: lightgray;    
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li{
+    font-size: .7rem;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+footer select{
+    width: 200px;
 }
